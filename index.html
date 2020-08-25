@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calories | Water Tracker</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav class="nav justify-content-center bg-dark text-light">
+    <li class="nav-item">
+      <h1>Calories | Water Tracker</h1>
+    </li>
+  </nav>
+<div class="container-xxl d-flex mt-3" style="justify-content: space-between">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center mb-3">Calories</h3>
+          <form class = "mb-2">
+            <div class="row">
+              <div class="col">
+                <!-- <label for="item-name">Meal</label> -->
+                <input type="text" class="form-control" placeholder="Add Meal" id="meal-name">
+              </div>
+              <div class="col">
+                <!-- <label for="item-calories">Calories</label> -->
+                <input type="number" class="form-control" placeholder="Add Calories" id="meal-calories">
+              </div>
+              
+            </div>
+          </form>
+        
+          <button type="button" class="add-meal-btn btn btn-primary"><i class="fa fa-plus"></i> Add Meal</button>         
+          <button type="button" class="update-meal-btn btn btn-warning"><i class="fa fa-pencil-square-o"></i> Update Meal</button>
+          <button type="button" class="delete-meal-btn btn btn-danger"><i class="fa fa-remove"></i> Delete Meal</button>
+          <button type="button" class="back-meal-btn btn btn-secondary pull-right"><i class="fa fa-chevron-circle-left"></i> Back</button>
+          <h4 class="text-center mt-3">Total Calories: <span class="total-calories">0</span></h4>
+
+        </div>
+        <ul id="meal-list" class="list-group">
+          <!-- data -->
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="col-sm-5">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center mb-3">Water</h3>
+          <form class = "mb-2">
+            <div class="row">
+              <select class="form-select" id="select-water">
+                
+                <option value="333">333m Ml</option>
+                <option value="666">666m Ml</option>
+                <option value="1000">1000 L</option>
+                <option disabled selected hidden>Amount of water</option>
+
+              </select>
+            </div>
+          </form>
+        
+          <button type="button" class="add-water-btn btn btn-primary"><i class="fa fa-plus"></i> Add Water</button>         
+          <button type="button" class="update-water-btn btn btn-warning"><i class="fa fa-pencil-square-o"></i> Update Water</button>
+          <button type="button" class="delete-water-btn btn btn-danger"><i class="fa fa-remove"></i> Delete Water</button>
+          <button type="button" class="back-water-btn btn btn-secondary pull-right"><i class="fa fa-chevron-circle-left"></i> Back</button>
+          <h4 class="text-center mt-3">Total Amount: <span class="total-amount">0</span></h4>
+
+        </div>
+        <ul id="water-list" class="list-group">
+          <!-- <li class="list-group-item" id="water-item-0">
+            <em>666 ml</em>
+            <a href="#" class="secondary-content">
+              <i class="edit-water-item fa fa-pencil"></i>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+</div>
+
+  <!-- FONTAWESOME -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <!-- LOCAL -->
+  <script src="app.js"></script>
+</body>
+</html>
